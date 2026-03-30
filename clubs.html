@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Categories</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container */
+        .container {
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Grid Layout */
+        .clubs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .clubs {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2>Student Portfolio</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Clubs</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Club Categories</h1>
+
+        <div class="clubs">
+
+            <div class="card">
+                <h2>Technology Club</h2>
+                <p>
+                    This club focuses on programming, AI, and modern technologies.
+                    Students collaborate on projects and enhance technical skills.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Sports Club</h2>
+                <p>
+                    Encourages activities like cricket, football, and basketball.
+                    Helps students stay fit and build teamwork.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Cultural Club</h2>
+                <p>
+                    Promotes art, music, and cultural activities.
+                    Students express creativity through performances.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Debate Club</h2>
+                <p>
+                    Enhances communication and critical thinking skills.
+                    Students participate in debates and discussions.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
