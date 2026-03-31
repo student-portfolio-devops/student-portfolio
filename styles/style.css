@@ -632,6 +632,150 @@ h1 {
   color: var(--accent-color);
 }
 
+/* ========== CLUBS PAGE STYLES ========== */
+
+/* Clubs Section */
+.clubs-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.club-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.club-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.club-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.club-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+}
+
+.club-card p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.club-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+.club-members {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.club-status {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.club-card .btn {
+  margin-top: auto;
+}
+
+/* Clubs Responsive */
+@media (max-width: 1024px) {
+  .clubs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .clubs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .clubs-section {
+    padding: 0 1rem;
+  }
+
+  .club-card {
+    padding: 1.5rem;
+  }
+
+  .club-icon {
+    font-size: 2.5rem;
+  }
+
+  .club-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .club-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .clubs-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .club-card {
+    padding: 1.5rem;
+  }
+
+  .club-icon {
+    font-size: 2.5rem;
+  }
+
+  .club-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .club-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .club-members {
+    font-size: 0.85rem;
+  }
+}
+
 /* Join Page Responsive */
 @media (max-width: 768px) {
   .steps-grid {
